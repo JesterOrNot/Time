@@ -1,8 +1,17 @@
 from kivy.app import App
+from kivy.uix.scatter import Scatter
 from kivy.uix.label import Label
-class MainApp(App):
+from kivy.uix.floatlayout import FloatLayout
+
+class MyApp(App):
+    title="Hello World"
     def build(self):
-        return Label(text=u"Hello World From Kivy!",color =[0.41, 0.42, 0.74, 1])
+        f = FloatLayout()
+        s = Scatter()
+        l = Label(text="Hello World From Kivy", font_size=75)
+        f.add_widget(s)
+        s.add_widget(l)
+        return f
 
 if __name__ == '__main__':
-    MainApp().run()
+    MyApp().run()
