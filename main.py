@@ -2,14 +2,14 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 
 
-class MainArea(Widget):
+class Frame(Widget):
     pass
 
 
-class TheApp(App):
+class TimerApp(App):
     def build(self):
-        return MainArea()
+        return Frame()
 
 
 if __name__ == "__main__":
-    TheApp().run()
+    TimerApp().run()
