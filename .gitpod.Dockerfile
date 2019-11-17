@@ -9,6 +9,13 @@ RUN apt-get update \
     libgl1-mesa-dev \
     libsdl2-dev \
     libsm-dev \
+    libjpeg-dev \
+    libnotify-dev \
+    libpng-dev \
+    libsdl2-dev \
+    libsm-dev \
+    libtiff-dev \
+    libwebkit2gtk-4.0-dev \
     libtiff-dev \
     freeglut3-dev \
     libgtk-3-dev \
